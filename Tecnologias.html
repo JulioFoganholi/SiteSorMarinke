@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sobre Tecnologias</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        .interativo {
+            background-color: #050005;
+            color: white;
+            padding: 40px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            margin: 20px auto;
+            max-width: 800px;
+        }
+
+        .botao {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            margin: 10px 0;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+        .texto {
+            display: none;
+            margin-top: 10px;
+            line-height: 1.6;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Sobre Tecnologias</h1>
+        <nav>
+            <ul>
+                <li><a href="Início.html">Formulário</a></li>
+                <li><a href="Formulário.html">Formulário</a></li>
+                <li><a href="Tecnologias.html">Sobre</a></li>
+                <li><a href="Tabela.html">Tabela</a></li>
+                <li><a href="Considerações.html">Considerações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="interativo">
+            <h2>O que você quer aprender?</h2>
+
+            <button class="botao" onclick="mostrarTexto('ftp')">O que é Servidor FTP?</button>
+            <div class="texto" id="ftp">
+                <p>O Servidor FTP é um sistema usado para transferir arquivos entre computadores. Ele permite que você envie e baixe arquivos de um servidor remotamente, sendo muito usado em sites e hospedagens.</p>
+            </div>
+
+            <button class="botao" onclick="mostrarTexto('js')">O que é JavaScript?</button>
+            <div class="texto" id="js">
+                <p>JavaScript é uma linguagem de programação que permite adicionar interatividade às páginas da web, como animações, botões clicáveis, formulários dinâmicos e muito mais.</p>
+            </div>
+
+            <button class="botao" onclick="mostrarTexto('docker')">O que é Docker?</button>
+            <div class="texto" id="docker">
+                <p>Docker é uma plataforma que empacota aplicações em contêineres, facilitando o transporte, instalação e execução dos programas em qualquer ambiente, sem complicações.</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Julio Foganholi. Todos os direitos reservados</p>
+    </footer>
+
+    <script>
+        function mostrarTexto(id) {
+            const elemento = document.getElementById(id);
+            const estaVisivel = elemento.style.display === 'block';
+
+            document.querySelectorAll('.texto').forEach(el => el.style.display = 'none');
+
+            elemento.style.display = estaVisivel ? 'none' : 'block';
+        }
+    </script>
+</body>
+</html>

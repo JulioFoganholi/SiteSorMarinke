@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Site Estilo VSCode</title>
+    <link rel="stylesheet" href="Style.css">
+    <script src="script.js" defer></script>
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        .container {
+            background-color: #050005;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            margin-bottom: 20px;
+            max-width: 80%;
+            text-align: center;
+            line-height: 1.6;
+        }
+
+        .container img {
+            max-width: 100%;
+            border-radius: 10px;
+            margin-top: 15px;
+        }
+
+        .container button {
+            background-color: #ffffff;
+            color: rgb(0, 0, 0);
+            border: none;
+            padding: 10px 20px;
+            font-size: 1em;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .container button:hover {
+            background-color: #9c23a3;
+        }
+
+        footer {
+            background-color: #000000;
+            padding: 10px;
+            text-align: center;
+            color: white;
+            width: 100%;
+            position: relative;
+            bottom: 0;
+            border-radius: 7px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Bem-vindo ao Meu Site</h1>
+        <nav>
+            <ul>
+                <li><a href="Início.html">Início</a></li>
+                <li><a href="Formulário.html">Formulário</a></li>
+                <li><a href="Tecnologias.html">Sobre</a></li>
+                <li><a href="Tabela.html">Tabela</a></li>
+                <li><a href="Considerações.html">Considerações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <div class="container">
+            <h2>Página Inicial</h2>
+            <p>Este site apresenta informações sobre tecnologias, um formulário interativo e uma tabela informativa.</p>
+            <p>Esse simples site foi feito por Júlio Foganholi e tem por finalidade atribuir nota à avaliação do professor Rógério Marinke.</p>
+        </div>
+
+        <div class="container">
+            <img src="logo.vscode.jpg" alt="Estilo VSCode">
+        </div>
+
+        <div class="container">
+            <button onclick="mostrarMensagem()">Clique aqui para ver uma mensagem</button>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Julio Foganholi. Todos os direitos reservados.</p>
+    </footer>
+
+    <script>
+        function mostrarMensagem() {
+            alert("Esse é um exemplo do uso de JavaScript em um site!");
+        }
+    </script>
+</body>
+</html>

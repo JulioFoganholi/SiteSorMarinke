@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tabela de Tecnologias</title>
+    <link rel="stylesheet" href="Style.css">
+    <style>
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 40px;
+        }
+
+        table {
+            border-collapse: collapse;
+            width: 80%;
+            margin-bottom: 30px;
+        }
+
+        th, td {
+            border: 1px solid #876b8a;
+            padding: 12px;
+            text-align: center;
+            color: white;
+        }
+
+        th {
+            background-color: #1a1a1a;
+            color: #8f8d8d;
+        }
+
+        td {
+            background-color: #121212;
+        }
+
+        .explicacao {
+            max-width: 80%;
+            background-color: #050005;
+            color: white;
+            padding: 20px;
+            border-radius: 10px;
+            line-height: 1.6;
+        }
+
+        footer {
+            background-color: #000000;
+            box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+            padding: 10px;
+            border-radius: 7px;
+            text-align: center;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+
+        body {
+            background-color: #8f8d8d;
+            margin: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        header {
+            background-color: #000000;
+            padding: 30px;
+            text-align: center;
+        }
+
+        header h1 {
+            color: #ffffff;
+            font-size: 2.5em;
+            margin: 0;
+        }
+
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+
+        nav li {
+            margin: 0 15px;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: white;
+            font-size: 1.1em;
+        }
+
+        nav a:hover {
+            color: #bf2fcc;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Tabela de Tecnologias</h1>
+        <nav>
+            <ul>
+                <li><a href="Início.html">Início</a></li>
+                <li><a href="Formulário.html">Formulário</a></li>
+                <li><a href="Tecnologias.html">Sobre</a></li>
+                <li><a href="Tabela.html">Tabela</a></li>
+                <li><a href="Considerações.html">Considerações</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <table>
+            <tr>
+                <th>Tecnologia</th>
+                <th>Descrição</th>
+            </tr>
+            <tr>
+                <td>HTML</td>
+                <td>Estruturação de páginas web.</td>
+            </tr>
+            <tr>
+                <td>CSS</td>
+                <td>Estilização de páginas web.</td>
+            </tr>
+            <tr>
+                <td>JavaScript</td>
+                <td>Interatividade em páginas web.</td>
+            </tr>
+            <tr>
+                <td>Git</td>
+                <td>Controle de versão de projetos.</td>
+            </tr>
+            <tr>
+                <td>Docker</td>
+                <td>Gerenciamento de contêineres.</td>
+            </tr>
+        </table>
+
+        <div class="explicacao">
+            <h2>Explicações Detalhadas</h2>
+            <p><strong>HTML:</strong> É a linguagem padrão usada para criar e estruturar páginas da web. Define elementos como títulos, parágrafos, links e imagens.</p>
+            <p><strong>CSS:</strong> Permite aplicar estilos visuais à estrutura HTML. Controla cores, fontes, tamanhos e o layout dos elementos em uma página.</p>
+            <p><strong>JavaScript:</strong> Torna as páginas web interativas, permitindo validar formulários, criar animações, manipular elementos e muito mais.</p>
+            <p><strong>Git:</strong> É um sistema de controle de versão usado para acompanhar as mudanças em projetos de software, facilitando o trabalho em equipe.</p>
+            <p><strong>Docker:</strong> Plataforma que empacota aplicações e suas dependências em contêineres, garantindo que funcionem em qualquer ambiente de forma consistente.</p>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; Julio Foganholi. Todos os direitos reservados</p>
+    </footer>
+</body>
+</html>
